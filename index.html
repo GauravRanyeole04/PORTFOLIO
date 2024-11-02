@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr. Gaurav Ranyeole Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <script>
+    // Save scroll position before unloading the page
+    window.addEventListener("beforeunload", function () {
+        sessionStorage.setItem("scrollPosition", window.scrollY);
+    });
+
+    // Load scroll position after loading the page
+    window.addEventListener("load", function () {
+        const scrollPosition = sessionStorage.getItem("scrollPosition");
+        if (scrollPosition) {
+            window.scrollTo(0, scrollPosition);
+        }
+    });
+  </script>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/photo_3-modified.png"  width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Gaurav Ranyeole</h1>
+
+          <p class="title">Software Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:gauravranyeole123@gmail.com" class="contact-link">gauravranyeole123@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+91 9172030595" class="contact-link">+91-9172030595</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">May 04 2002</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Chh.Sambhaji Nagar</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/gaurav-ranyeole-6420aa258/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/GauravRanyeole04" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/sunny_r_04/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>   
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Software Developer passionate about transforming ideas into innovative solutions. Based in Pune, India, I specialize in creating efficient and robust applications that address real-world challenges.
+          </p>
+
+          <p>
+            My approach involves understanding your unique needs and translating them into well-structured code. I believe that great software should seamlessly integrate functionality with an intuitive user experience, ensuring that it serves its purpose effectively. I
+            add personal touch to your product and make sure that is eye-catching and easy to use. 
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Software Development</h4>
+
+                <p class="service-item-text">
+                  Developing responsive and user friendly software.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>  
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Certifications</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/gws.jpeg" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Global Web Solution</h4>
+                
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>At GWS Jalna, I enhanced my skills in full-stack web development..
+
+                    by working on both front-end and back-end technologies. I contributed to developing and refining web applications using HTML, CSS, JavaScript, and SQL. My responsibilities included collaborating with the development team to implement features, optimize performance, and resolve issues. This internship provided me with valuable experience in real-world project workflows and team collaboration.
+                  <a href="https://www.linkedin.com/posts/gaurav-ranyeole-6420aa258_connections-internship-iso-activity-7047432824202686464-ZnXF?utm_source=share&utm_medium=member_desktop">GWS Certificate</a>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/Test Yantra .jpg" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Test Yantra</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>At Test Yantra Pvt.Ltd in Pune, I gained comprehensive training..
+
+in Java development over an 8-month internship. I worked on various projects, enhancing my skills in Java and J2EE, and contributed to developing and optimizing web applications.
+                    <a href="https://www.linkedin.com/posts/gaurav-ranyeole-6420aa258_testyantra-qspiders-fullstackdevelopment-activity-7194266215383457792-l7a-?utm_source=share&utm_medium=member_desktop">Test Yantra Pvt.Ltd</a>
+</p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/AWS.jpeg" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>AWS Cloud Computing</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>As an intern, completing an AWS course provided foundational skills in cloud computing. I learned key AWS services like EC2, S3, and IAM, gaining hands-on experience in cloud architecture, security, and resource management. This training enhanced my ability to deploy and manage scalable, secure cloud solutions efficiently.
+                    <a href="https://www.linkedin.com/posts/gaurav-ranyeole-6420aa258_aws-internship-cloudcomputing-activity-7120043531922010112-u9Ha?utm_source=share&utm_medium=member_desktop">AWS Cloud Computing</a>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/postman.jpeg" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Postman API</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>The Postman API Fundamentals Student Expert certificate on the Postman website validates essential skills in API development and testing. Through the program, I learned to create, test, and document APIs, use collections, and manage requests efficiently. This certification deepened my understanding of API workflows, enhancing my proficiency in designing and troubleshooting APIs within the Postman environment.
+                  <a href="https://www.linkedin.com/posts/gaurav-ranyeole-6420aa258_postman-apis-certification-activity-7237073632147988480-1oc7?utm_source=share&utm_medium=member_desktop">Postman</a>  
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/powerbi.jpeg" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Microsoft Power BI</h4> </h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>The Microsoft Power BI course at Tech Decore provided hands-on training in data visualization, analysis, and business intelligence. Covering key concepts such as data transformation, modeling, and creating interactive dashboards, the course enabled me to turn complex data into actionable insights. I learned to connect multiple data sources, create powerful visual reports, and leverage Power BI's tools to enhance data-driven decision-making in professional environments.
+                    <a href="https://www.linkedin.com/posts/gaurav-ranyeole-6420aa258_powerbi-dashboards-analytics-activity-7216082160355532802-CWWW?utm_source=share&utm_medium=member_desktop">Power_BI</a>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/python.jpeg" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Python Opp's</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                 <p>The LinkedIn Python OOPs (Object-Oriented Programming) certificate demonstrates proficiency in Python’s object-oriented programming concepts, including classes, objects, inheritance, encapsulation, and polymorphism. Through this course, I developed skills to create modular, reusable code and design efficient software structures. Mastering OOP principles in Python enabled me to build more complex and scalable applications, making this certification valuable for roles that require robust programming and advanced problem-solving capabilities in Python.
+                  <a href="https://www.linkedin.com/posts/gaurav-ranyeole-6420aa258_connections-python-linkdin-activity-7048289686515027968-u4px?utm_source=share&utm_medium=member_desktop">Python_Opp's</a>
+                 </p>
+                </div>
+
+              </div>
+            </li>
+            
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>GauravRanyeole04</h4>
+
+              <!-- <time datetime="2021-06-14">15 Jan 2022</time> -->
+
+              <div data-modal-text> </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Dr. Babasaheb Ambedkar Technological University, Lonere</h4>
+
+              <span>2021 — 2024</span>
+
+              <p class="timeline-text">
+                B.Tech in Computer Science and Engineering. <br>
+                I have studied basic software engineering subjects like DS, Algorithms, Daa, Ai, Toc, etc.<br>
+                CGPA: 7.60 / 10
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">MSME, Indo German Tool Room, Aurangabad</h4>
+
+              <span>2018 — 2021</span>
+
+              <p class="timeline-text">
+                Diploma in Mechatronics. <br>
+                I have studied ro stream subjects like Computer Science, Physics, Chemistry, Mathematics etc.<br>
+                Percentage: 72.23%
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Shri. Pratibhatai Patil Secondary School, Chh.Sambhajinagar</h4>
+
+              <span>2017 — 2018</span>
+
+              <p class="timeline-text">
+                Secondary School Certificate
+                I have studied science stream subjects like science, Mathematics etc.<br>
+                Percentage: 82.80%
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Test Yantra</h4>
+
+              <span>15 Jan — 15 May 2024</span>
+
+              <p class="timeline-text">
+                Intern,
+                I had the opportunity to learn and implement fundamental concepts of web development.                                         
+This experience allowed me to gain practical knowledge in building and designing websites,                        
+       which I found valuable for my career development.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Tech Decore</h4>
+
+              <span>July — Aug 2023</span>
+
+              <p class="timeline-text">
+                Intern,
+                Completed an AWS Cloud Computing internship at Tech Decore, gaining hands-on experience in cloud infrastructure, deployment, and management. Developed skills in AWS services like EC2, S3, and Lambda, focusing on scalable solutions, automation, and efficient cloud-based resource management.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Global Web Solution</h4>
+
+              <span>15 Oct — 15 Jan 2022</span>
+
+              <p class="timeline-text">
+                This experience equipped me with a robust foundation in the field.
+ I had the chance to work on applying these models to real-world scenarios. 
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <button class="form-btn" type="submit" disabled data-form-btn>
+          <ion-icon name="download-outline"></ion-icon>
+          <a href="https://drive.google.com/file/d/1D3Cl0ITjQVI2oPnbhvnnCU6TlzZciQuH/view?usp=drive_link" style="color: var(--orange-yellow-crayola);">my resume</a>
+        </button>
+
+          <section class="clients">
+
+          <h3 class="h3 clients-title">Tools i use</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/Eclipse.png" alt="client logo" class="img">
+              </a> 
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/mysql.png" alt="client logo" class="img">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/postman-icon.png" alt="client logo" class="img">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/icons8-github-48.png" alt="client logo" class="img">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/icons8-visual-studio-code-48.png" alt="client logo" class="img">
+              </a>
+            </li>
+
+            
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/bootstrap-modified.png" alt="client logo" class="img">
+              </a>
+            </li>
+
+          </ul>
+
+        </section> 
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/GauravRanyeole04/Online-Auction-System">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/online-auction-technology-png.webp" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Online Auction System</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/GauravRanyeole04/-E-commerce-Website">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ECommerce.jpg" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">E Commerce Website</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/GauravRanyeole04/Student_registration_app">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/StudentRegMan.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Student Registration Application</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://github.com/GauravRanyeole04/Employee_Management_System">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/EmpManSys.jpg" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Employee Management System</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/GauravRanyeole04/Bank_Management_System">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/BankManSys.jpg" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Bank Management System</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://gauravranyeole04.github.io/Zomato_Clone/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/zomatoclone.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Zomato Clone</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://gauravranyeole04.github.io/Online_Restaurant_Order_System/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/DosaDelight.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Online Restaurant Order System</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <!-- <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/ieee.jpeg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Paper Published</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">jan 23, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">IEEE conferences in 2024</h3>
+
+                  <p class="blog-text">
+                    IEEE is the world's largest technical professional organization'
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Nov 10, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Winners</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Sep 03, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Project Compitation</h3>
+
+                  <p class="blog-text">
+                   No matter how good the team or methodology if we're not solving the right problem,the fails every time.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/ui.jpeg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Gui</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">May 01, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/hac.png" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Hackathon</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Nov 30, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten  </h3>
+
+                  <p class="blog-text">
+                        Inovation, Creativity, Improvement, Skill Development Teamwork, Rapid Development, Simulated Visualization.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Techfest</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Jun 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">IIT Bombay</h3>
+
+                  <p class="blog-text">
+                    A competitive event that challenges students in stem discipline to test their knowledge and problem-solving skills.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article> -->
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <h3 class="h3 form-title">Current location</h3>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15135.445739294246!2d73.80997564150019!3d18.489934671559812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfe79bf771d7%3A0xac81e25be4cc4bf!2sKarve%20Nagar%2C%20Pune%2C%20Maharashtra%20411052!5e0!3m2!1sen!2sin!4v1729102087734!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="hidden" name="access_key" value="e4b1c4ba-699c-4717-8d3a-ec87f15ea8d0">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <!-- <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button> -->
+
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+            
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
